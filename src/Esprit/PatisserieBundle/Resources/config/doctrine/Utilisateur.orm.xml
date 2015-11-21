@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Esprit\PatisserieBundle\Entity\Utilisateur" table="utilisateur">
+    <id name="idUtilisateur" type="integer" column="id_utilisateur">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="type" type="string" column="type" length="25" nullable="false"/>
+    <field name="cinUtilisateur" type="integer" column="cin_utilisateur" nullable="false"/>
+    <field name="nomUtilisateur" type="string" column="nom_utilisateur" length="100" nullable="false"/>
+    <field name="prenomUtilisateur" type="string" column="prenom_utilisateur" length="20" nullable="false"/>
+    <field name="email" type="string" column="email" length="50" nullable="false"/>
+    <field name="login" type="string" column="login" length="100" nullable="false"/>
+    <field name="motDePasse" type="string" column="mot_de_passe" length="20" nullable="false"/>
+    <field name="adresseUtilisateur" type="string" column="adresse_utilisateur" length="40" nullable="false"/>
+    <field name="telephone" type="string" column="telephone" length="20" nullable="false"/>
+    <field name="etat" type="integer" column="etat" nullable="true"/>
+    <field name="valide" type="integer" column="valide" nullable="false"/>
+    <field name="numCarteBancaire" type="string" column="num_carte_bancaire" length="30" nullable="true"/>
+    <field name="dateInscri" type="date" column="date_inscri" nullable="true"/>
+  </entity>
+</doctrine-mapping>

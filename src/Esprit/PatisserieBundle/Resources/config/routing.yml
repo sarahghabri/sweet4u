@@ -1,0 +1,33 @@
+esprit_patisserie_homepage:
+    path:     /home
+    defaults: { _controller: EspritPatisserieBundle:Default:index }
+esprit_patisserie_checkoutpage:
+    path:     /checkout
+    defaults: { _controller: EspritPatisserieBundle:checkout:checkoutIndex }
+esprit_patisserie_aboutpage:
+    path:     /about
+    defaults: { _controller: EspritPatisserieBundle:about:aboutIndex}
+esprit_patisserie_contactpage:
+    path:     /contact
+    defaults: { _controller: EspritPatisserieBundle:contact:contactIndex }
+esprit_patisserie_loginpage:
+    path:     /login
+    defaults: { _controller: EspritPatisserieBundle:login:loginIndex }
+esprit_patisserie_myaccountpage:
+    path:     /myaccount
+    defaults: { _controller: EspritPatisserieBundle:myaccount:myaccountIndex }
+esprit_patisserie_productpage:
+    path:     /product
+    defaults: { _controller: EspritPatisserieBundle:product:productIndex }
+esprit_patisserie_registerpage:
+    path:     /register
+    defaults: { _controller: EspritPatisserieBundle:register:registerIndex }
+esprit_patisserie_singlepage:
+    path:     /register
+    defaults: { _controller: EspritPatisserieBundle:singlepage:singlepageIndex }
+esprit_patisserie_addUser:
+    path:     /addUser
+    defaults: { _controller: EspritPatisserieBundle:Utilisateur:add }
+esprit_utilisateur_list:
+     path:     /showUser
+     defaults: { _controller: EspritPatisserieBundle:Utilisateur:show }
